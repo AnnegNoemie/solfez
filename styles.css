@@ -1,210 +1,266 @@
 @font-face {
-          font-family: 'RobotoMono';
-          src: url('../fonts/RobotoMono-Regular.ttf') format('ttf');
-          font-weight: normal;
-          font-style: normal;
-      }
-      
-      * {
-          box-sizing: border-box;
-          font-family: RobotoMono, sans-serif;
-          margin: 0;
-          padding: 0;
-      }
-      
-      body {
-          font-size: 14px;
-          margin: 0;
-          color: white;
-          /* overflow: hidden; */
-      }
-      
-      header {
-          background-color: #272343;
-          padding: 20px;
-      }
+    font-family: 'RobotoMono';
+    src: url('../fonts/RobotoMono-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
-      .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #272343;
-        padding: 10px 0;
-        z-index: 100;
-    }
-      
-      nav ul {
-          list-style: none;
-          display: flex;
-          justify-content: center;
-      }
-      
-      nav li {
-          margin-right: 5%;
-          margin-left: 5%;
-      }
-      
-      nav a {
-          text-decoration: none;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: color 0.3s;
-      }
-      
-      nav a:hover {
-          color: #E3F6F5;
-      }
-      
-      .container {
-          width: 100%;
-          min-height: 100vh;
-          position: relative;
-          overflow: hidden;
-      }
-      
-      .background {
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(rgba(112, 126, 146, 1), rgba(39, 35, 67, 0.11));
-          position: absolute;
-          top: 0;
-          left: 0;
-          opacity: 1;
-      }
-      
-      .angle {
-          position: absolute;
-          width: 420px;
-          height: 330px;
-          background-image: url('../images/angle.png');
-          background-size: cover;
-      }
-      
-      .top-left {
-          top: 0;
-          left: 0;
-          transform: rotate(180deg);
-      }
-      
-      .bottom-right {
-          bottom: 0;
-          right: 0;
-      }
-      
-      .responsive-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-          padding: 5%;
-          position: relative;
-          z-index: 1;
-      }
-      
-      .presentation {
-          text-align: center;
-          max-width: 800px;
-              }
-      
-      .title {
-          font-size: 64px;
-          margin-bottom: 40px;
-      }
-      
-      .description {
-          font-size: 20px;
-          margin-bottom: 80px;
-      }
-      
-      .boutonJouer {
-          width: 100%;
-          max-width: 400px;
-          padding: 15px;
-          border: none;
-          border-radius: 100px;
-          background-color: #E3F6F5;
-          color: #272343;
-          font-size: 36px;
-          cursor: pointer;
-          transition: background-color 0.3s, color 0.3s;
-      }
-      
-      .boutonJouer:hover {
-          background-color: #272343;
-          color: white;
-      }
-      
-      .boutonJouer {
-          margin-top: 10%;
-      }
-      
-      .team-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 20px;
-        max-width: 800px;
-        padding-bottom: 40px;
-        z-index: 2;
-    }
-    
-    .team-member {
-        text-align: center;
-        max-width: 200px;
-        margin: 20px;
-        color: white; /* Ajoutez cette ligne pour rendre le texte blanc */
-    }
-    
-    .team-member img {
-        max-width: 100%;
-        border-radius: 50%;
-    }
-    
-    .team-member h2 {
-        font-size: 24px;
-        margin: 10px 0;
-    }
-    
-    .team-member p {
-        font-size: 16px;
-        color: white; /* Ajoutez cette ligne pour rendre le texte blanc */
-    }
-      
-      .project-container {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          flex-wrap: wrap;
-          max-width: 800px;
-          padding: 20px;
-      }
-      
-      .project-container img {
-          max-width: 100%;
-          margin: 10px;
-      }
-      
-      .github-container {
-          text-align: center;
-          margin-top: 20px;
-      }
-      
-      .github-container a {
-          text-decoration: none;
-          background-color: #E3F6F5;
-          color: #272343;
-          padding: 10px 20px;
-          border-radius: 5px;
-          font-weight: bold;
-          font-size: 18px;
-          transition: background-color 0.3s, color 0.3s;
-      }
-      
-      .github-container a:hover {
-          background-color: #272343;
-          color: white;
-      }
-      
+* {
+    box-sizing: border-box;
+    font-family: RobotoMono, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+    /* overflow: hidden; */
+}
+
+header {
+    background-color: #272343;
+    padding: 20px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #272343;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #E3F6F5;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+td{
+    text-align: center;
+    width: 300px;
+
+}
+td li{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(112, 126, 146, 1), rgba(39, 35, 67, 0.11));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.angle {
+    position: absolute;
+    width: 420px;
+    height: 330px;
+    background-image: url('../images/angle.png');
+    background-size: cover;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.responsive-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    position: relative;
+    z-index: 1;
+}
+
+.presentation {
+    text-align: center;
+    max-width: 800px;
+}
+
+.title {
+    margin-top: 50px;
+    font-size: 64px;
+    margin-bottom: 40px;
+
+}
+
+.description {
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+.boutonJouer {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: #E3F6F5;
+    color: #272343;
+    font-size: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boutonJouer:hover {
+    background-color: #272343;
+    color: white;
+}
+
+.boutonJouer {
+    margin-top: 10%;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 70px;
+    max-width: 800px;
+    padding-bottom: 40px;
+    z-index: 2;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 140px;
+    min-width: 139px;
+    margin: 30px;
+    color: white;
+    /* Ajoutez cette ligne pour rendre le texte blanc */
+}
+
+.team-member img {
+    max-width: 140px;
+    min-width: 139px;
+    max-height: 170px;
+    min-height: 170px;
+    border-radius: 50%;
+}
+
+.team-member h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: white;
+    /* Ajoutez cette ligne pour rendre le texte blanc */
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+
+}
+
+.project-container #responsive {
+    display: flex;
+    max-width: 300px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.project-container img {
+    padding: 20px;
+}
+
+.project-container img {
+    max-width: 100%;
+    margin: 10px;
+}
+
+.github-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.github-container a {
+    text-decoration: none;
+    background-color: #E3F6F5;
+    color: #272343;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.github-container a:hover {
+    background-color: #272343;
+    color: white;
+}
+
+#accueil {
+    scroll-margin-top: 60px;
+}
+
+#equipe {
+    scroll-margin-top: 60px;
+}
+
+#project {
+    scroll-margin-top: 60px;
+}
+
+#comparaion {
+    scroll-margin-top: 60px;
+}
+
+#github {
+    scroll-margin-top: 60px;
+}
