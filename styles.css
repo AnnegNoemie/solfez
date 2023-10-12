@@ -126,10 +126,11 @@ td li {
 .presentation {
     text-align: center;
     max-width: 800px;
+    padding-bottom: 80px;
 }
 
 .title {
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 64px;
     margin-bottom: 40px;
 
@@ -172,6 +173,25 @@ td li {
     }
 }
 
+.sub-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.space {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.icon {
+    position: absolute;
+    top:2.5%;
+    right: 20%;
+}
+
 .boutonJouer {
     width: 100%;
     max-width: 400px;
@@ -199,7 +219,7 @@ td li {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 70px;
+    padding: 10px;
     max-width: 800px;
     padding-bottom: 40px;
     z-index: 2;
@@ -211,7 +231,6 @@ td li {
     min-width: 139px;
     margin: 30px;
     color: white;
-    /* Ajoutez cette ligne pour rendre le texte blanc */
 }
 
 .team-member img {
@@ -236,7 +255,14 @@ td li {
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
+}
 
+.montee-de-version {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
 }
 
 .project-container #responsive {
