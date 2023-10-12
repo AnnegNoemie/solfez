@@ -164,6 +164,7 @@ td li {
     text-align: center;
     max-width: calc(100% - 20px);
     min-width: none;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -175,9 +176,13 @@ td li {
 
 .sub-title {
     font-size: 20px;
+    margin-bottom: 20px;
     font-weight: bold;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    background-color: #272343;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .title-solfezicon {
