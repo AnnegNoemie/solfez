@@ -5,8 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <title>Votre Projet</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Votre Projet</title>
 </head>
 
 <body>
@@ -25,12 +29,11 @@
     <div class="header">
       <div class="menu">
         <label for="saveForm">menu</label>
-        <input type="image" src="./image/suite.png" name="saveForm" class="btn_menu" id="saveForm"
-          value="Menu" />
+        <input type="image" src="./image/suite.png" name="saveForm" class="btn_menu" id="saveForm" value="Menu" />
       </div>
       <div class="menu-container">
         <ul class="nav_list">
-          <li class="nav__item"><a class="nav__link"   href="#accueil">Accueil</a></li>
+          <li class="nav__item"><a class="nav__link" href="#accueil">Accueil</a></li>
           <li class="nav__item"><a class="nav__link" href="#equipe">L'équipe</a></li>
           <li class="nav__item"><a class="nav__link" href="#project">Le Site</a></li>
           <li class="nav__item"><a class="nav__link" href="#comparaion">Montée de version</a></li>
@@ -41,13 +44,15 @@
   </header>
   <div class="container">
     <div class="background"></div>
-    <div class="icon"><i class="fa-solid fa-music fa-bounce fa-4x" style="color: #272343";></i></div>
+    <!-- <div class="icon"><i class="fa-solid fa-music fa-bounce fa-4x" style="color: #272343";></i></div> -->
 
     <div class="responsive-container">
 
       <div class="presentation">
-        <h1 class="title" id="accueil">Solf'ez</h1>
-
+        <div class="title-solfezicon">
+          <h1 class="title" id="accueil">Solf'ez</h1>
+          <div class="icon"><i class="fa-solid fa-music fa-bounce fa-4x" style="color: #272343; margin-left: 50px;" ></i></div>
+        </div>
         <p class="description">
           Vous avez toujours voulu apprendre à jouer au piano mais ne savez
           pas par où commencer ?<br />
@@ -59,14 +64,16 @@
         </p>
         <div class="info">
           <div class="details">
-            <div class="sub-title"><i class="fa-regular fa-circle-question" style="color: #ffffff;"></i> C'est quoi ?</div>Solf'ez est une application web ayant pour
+            <div class="sub-title"><i class="fa-regular fa-circle-question" style="color: #ffffff;"></i> C'est quoi ?
+            </div>Solf'ez est une application web ayant pour
             but d'apprendre àr reconnaître les notes de musiques sur un piano
             et à l'oreille.<br /><br />Vous pouvez vous situer parmi les
             autres joueurs grâce à un classement des meilleurs scores et vous
             avez accès à vos statistiques sur votre page de profil.
           </div>
           <div class="details">
-            <div class="sub-title"><i class="fa-regular fa-circle-play" style="color: #ffffff;"></i> Comment jouer ?</div>Il y a 3 niveaux de difficulté. Dans le
+            <div class="sub-title"><i class="fa-regular fa-circle-play" style="color: #ffffff;"></i> Comment jouer ?
+            </div>Il y a 3 niveaux de difficulté. Dans le
             premier, vous entendrez une note et la verrez simultanément
             s'allumer sur le piano et il faudra cliquer sur la bonne réponse
             parmi 3 choix via un qcm. Dans le deuxième niveau, vous entendrez
@@ -75,7 +82,8 @@
             faudra sélectionner les 3 notes entendues sur le piano.
           </div>
           <div class="details">
-            <div class="sub-title"><i class="fa-solid fa-gears" style="color: #ffffff;"></i> Comment ça marche ?</div>Pour le premier niveau, vous gagnez
+            <div class="sub-title"><i class="fa-solid fa-gears" style="color: #ffffff;"></i> Comment ça marche ?</div>
+            Pour le premier niveau, vous gagnez
             1 point par bonne réponse. Si vous commettez 3 erreurs, vous
             perdez et votre score retombe à 0. Votre score le plus haut est
             sauvegardé et visible dans le classement. Pour le niveau moyen,
@@ -136,43 +144,43 @@
       </div>
 
       <div class="montee-de-version">
-      <h1 class="title" id="project" style="color: #000000;">Montée de version</h1>
-      <div style="color: black">
-        <table class="table">
-          <thead>
-            <tr>
-              <th colspan="2" class="space">
-                Caractéristiques de la version 1 et de la version 2
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="space">V1</td>
-              <td class="space">V2</td>
-            </tr>
-            <tr>
-              <td>
-                <li>2 niveaux de jeu : facile et intermédiaire</li>
-                <li>système d'inscription et de connexion</li>
-                <li>page de classement</li>
-                <li>système de score en fonction du niveau</li>
-                <li>système de vie simple</li>
-              </td>
-              <td>
-                <li>ajout du niveau difficile</li>
-                <li>
-                  système de vie en fonction du niveau de difficulté
-                </li>
-                <li>ajout d’un timer</li>
-                <li>amélioration du front (responsive)</li>
-                <li>hébergement du site</li>
-                <li>page de profil avec des statistiques</li>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <h1 class="title" id="project" style="color: #000000;">Montée de version</h1>
+        <div style="color: black">
+          <table class="table">
+            <thead>
+              <tr>
+                <th colspan="2" class="space">
+                  Caractéristiques de la version 1 et de la version 2
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="space">V1</td>
+                <td class="space">V2</td>
+              </tr>
+              <tr>
+                <td>
+                  <li>2 niveaux de jeu : facile et intermédiaire</li>
+                  <li>système d'inscription et de connexion</li>
+                  <li>page de classement</li>
+                  <li>système de score en fonction du niveau</li>
+                  <li>système de vie simple</li>
+                </td>
+                <td>
+                  <li>ajout du niveau difficile</li>
+                  <li>
+                    système de vie en fonction du niveau de difficulté
+                  </li>
+                  <li>ajout d’un timer</li>
+                  <li>amélioration du front (responsive)</li>
+                  <li>hébergement du site</li>
+                  <li>page de profil avec des statistiques</li>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div class="github-container" id="github">
         <a href="https://github.com/godafflig/solfez" target="_blank">Voir sur GitHub</a>
@@ -182,34 +190,34 @@
 </body>
 <script>
 
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.getElementById("saveForm");
     const menuContainer = document.querySelector(".menu-container");
 
     menuButton.addEventListener("click", () => {
 
-        menuContainer.classList.toggle("active");
+      menuContainer.classList.toggle("active");
     });
-});
-document.addEventListener("DOMContentLoaded", () => {
+  });
+  document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.getElementById("saveForm");
     const menuContainer = document.querySelector(".nav_list");
     const imageElement = menuButton;
 
     menuButton.addEventListener("click", () => {
-        menuContainer.classList.toggle("active");
+      menuContainer.classList.toggle("active");
 
-        // Vérifiez l'attribut src actuel pour déterminer quelle image afficher
-        if (imageElement.getAttribute("src") === "./image/signe-de-la-croix.png") {
-            // Changez l'image au clic
-            imageElement.setAttribute("src", "./image/suite.png");
-        } else {
-            // Revert to the original image if it's already changed
-            imageElement.setAttribute("src", "./image/signe-de-la-croix.png");
-        }
+      // Vérifiez l'attribut src actuel pour déterminer quelle image afficher
+      if (imageElement.getAttribute("src") === "./image/signe-de-la-croix.png") {
+        // Changez l'image au clic
+        imageElement.setAttribute("src", "./image/suite.png");
+      } else {
+        // Revert to the original image if it's already changed
+        imageElement.setAttribute("src", "./image/signe-de-la-croix.png");
+      }
 
     });
-});
+  });
 
 </script>
 

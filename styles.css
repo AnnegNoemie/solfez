@@ -180,17 +180,20 @@ td li {
     padding-bottom: 20px;
 }
 
+.title-solfezicon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .space {
     padding: 10px;
     font-weight: bold;
     font-size: 20px;
 }
 
-.icon {
-    position: absolute;
-    top:2.5%;
-    right: 20%;
-}
+.icon {}
 
 .boutonJouer {
     width: 100%;
@@ -331,6 +334,9 @@ td li {
 }
 
 @media screen and (max-width: 450px) {
+    .title{
+        font-size: 35px;
+    }
     .navbar {
         display: none;
     }
@@ -418,7 +424,8 @@ td li {
         /* margin-block-end: 10px; */
         margin-right: 20px;
     }
-    .menu label{
+
+    .menu label {
         padding: 20px;
     }
 
