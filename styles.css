@@ -279,6 +279,14 @@ td li {
     padding-top: 60px;
 }
 
+.explication {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #272343;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
 .project-container #responsive {
     display: flex;
     max-width: 300px;
@@ -300,17 +308,35 @@ td li {
 .github-container {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .github-container a {
     text-decoration: none;
-    background-color: #E3F6F5;
+    /* background-color: #E3F6F5; */
+    background-color: #a19db7bf;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     color: #272343;
     padding: 10px 20px;
-    border-radius: 5px;
     font-weight: bold;
     font-size: 18px;
     transition: background-color 0.3s, color 0.3s;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.icon1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .github-container a:hover {
