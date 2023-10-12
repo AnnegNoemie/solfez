@@ -271,7 +271,7 @@ td li {
     grid-template-columns: repeat(2, 2fr);
 }
 
-.montee-de-version {
+#montee-de-version {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,11 +280,12 @@ td li {
 }
 
 .explication {
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
     border-radius: 10px;
-    background-color: #272343;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    /* background-color: #272343; */
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .project-container #responsive {
