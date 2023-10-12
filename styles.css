@@ -134,8 +134,40 @@ td li{
 
 .description {
     font-size: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    display: flex;
+  flex-direction: row wrap;
 }
+
+.info {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.details {
+    flex-grow: 1;
+    flex-basis: calc(33.33% - 20px);
+    border-radius: 10px;
+    background-color: #2723439b;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box; 
+  text-align: center;
+  max-width: calc(100% - 20px);
+  min-width: none;
+  }
+
+  @media (max-width: 768px) {
+    .details {
+      flex-basis: calc(100% - 20px);
+      max-width: none;
+    }
+  }
 
 .boutonJouer {
     width: 100%;
